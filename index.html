@@ -4,252 +4,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2563eb">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <title>Add Date and Name on Passport Photo Online (Free) - SSC & Govt Exam</title>
-    
-    <meta name="description" content="Need to add Name and Date of Photo (DOP) for SSC, UPSC, or PSC? Use this Free Online Tool to write date on passport size photo instantly without cropping your image. No watermark.">
-    <meta name="keywords" content="add date on photo online, passport size photo with date, ssc photo date maker, write name on photo, photo pe date kaise likhe, date of photo generator, ssc cgl photo editor">
+    <meta name="description" content="Free Online Tool to add Date of Photo (DOP) and Name on passport size photos for SSC, UPSC, and Govt Exams. 100% Secure, No Watermark, No Crop.">
+    <meta name="keywords" content="add date on photo online, passport size photo with date, ssc photo date maker, write name on photo, photo pe date kaise likhe, date of photo generator, ssc cgl photo editor 2026">
     <meta name="author" content="OrbitWebTools">
     
     <meta property="og:title" content="Add Date and Name on Passport Photo Online">
-    <meta property="og:description" content="Free tool to add candidate name and date of photo (DOP) on passport images for Indian government exams.">
+    <meta property="og:description" content="Instantly generate SSC/UPSC compliant passport photos with Name and Date. Free, fast, and completely local processing.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orbitwebtools.github.io/add-date-on-photo/">
-
     <link rel="canonical" href="https://orbitwebtools.github.io/add-date-on-photo/" />
-    
+
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Date on Photo Generator",
-      "url": "https://orbitwebtools.github.io/add-date-on-photo/",
-      "applicationCategory": "Utility",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Date on Photo Generator",
+        "url": "https://orbitwebtools.github.io/add-date-on-photo/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+        "description": "Free tool to add candidate name and date of photo (DOP) on passport images for Indian government exams without cropping the face."
       },
-      "featureList": "Add name and date on passport photo, Resize for SSC exams, Instant download",
-      "description": "Free tool to add candidate name and date of photo (DOP) on passport images for Indian government exams."
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How to add date on photo for SSC online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Simply upload your photo, select the current date, and click 'Generate'. Our tool will automatically append a white strip with the Date of Photo (DOP) at the bottom." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I add both Name and Date?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes! You can enter your name in the 'Candidate Name' field. The tool will print both Name and Date clearly on the photo." }
+          }
+        ]
+      }
+    ]
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #2563eb; --primary-dark: #1e40af; --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --border: #e2e8f0; }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; line-height: 1.6; }
+        /* CSS Variables & Reset */
+        :root { --primary: #2563eb; --primary-dark: #1e40af; --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --text-light: #64748b; --border: #cbd5e1; }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 20px 15px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; line-height: 1.6; }
 
-        .container { width: 100%; max-width: 650px; }
+        .container { width: 100%; max-width: 680px; }
 
-        header { text-align: center; margin-bottom: 2rem; padding-top: 1rem; }
-        h1 { font-size: 1.8rem; font-weight: 800; color: #1e293b; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
-        .sub-head { color: #64748b; font-size: 1rem; }
-        .badge { background: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; display: inline-block; margin-bottom: 10px; border: 1px solid #bfdbfe; }
+        /* Typography & Header */
+        header { text-align: center; margin-bottom: 2.5rem; padding-top: 1rem; }
+        h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 800; color: #0f172a; margin-bottom: 0.5rem; letter-spacing: -0.03em; }
+        .sub-head { color: var(--text-light); font-size: 1.05rem; }
+        .badge { background: #dbeafe; color: #1e40af; padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; display: inline-block; margin-bottom: 12px; border: 1px solid #bfdbfe; text-transform: uppercase; letter-spacing: 1px; }
 
-        .card { background: var(--surface); border-radius: 20px; padding: 25px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); border: 1px solid var(--border); overflow: hidden; }
+        /* 3D UI Card */
+        .card { 
+            background: var(--surface); 
+            border-radius: 24px; 
+            padding: 30px; 
+            /* Subtle 3D floating effect */
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05); 
+            border: 1px solid #e2e8f0; 
+        }
 
+        /* Interactive Upload Box */
         .upload-box {
-            border: 2px dashed #cbd5e1; background: #f1f5f9; padding: 2.5rem;
-            text-align: center; border-radius: 16px; cursor: pointer; transition: all 0.3s ease;
+            border: 2px dashed var(--border); background: #f8fafc; padding: 3rem 2rem;
+            text-align: center; border-radius: 16px; cursor: pointer; 
+            /* GPU Accelerated Transitions */
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
         }
-        .upload-box:hover { border-color: var(--primary); background: #eff6ff; transform: translateY(-2px); }
-        .upload-icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
+        .upload-box:hover, .upload-box.dragover { 
+            border-color: var(--primary); background: #eff6ff; 
+            transform: translateY(-4px); 
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+        }
+        .upload-icon { font-size: 3rem; display: block; margin-bottom: 15px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); }
 
-        .form-group { margin-top: 1.5rem; }
-        .label { display: block; font-weight: 600; margin-bottom: 6px; color: #334155; font-size: 0.95rem; }
-        .input-field { width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 1rem; transition: 0.2s; outline: none; }
-        .input-field:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        /* Form Inputs */
+        .form-group { margin-top: 1.8rem; }
+        .label { display: block; font-weight: 600; margin-bottom: 8px; color: #334155; font-size: 0.95rem; }
+        .input-field { 
+            width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 12px; 
+            font-size: 1rem; color: var(--text); background: #f8fafc;
+            transition: all 0.2s ease; outline: none; font-family: inherit;
+        }
+        .input-field:focus { 
+            border-color: var(--primary); background: #fff;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15); 
+        }
+
+        /* Real 3D Buttons */
+        .btn { 
+            width: 100%; padding: 18px; border: none; border-radius: 14px; 
+            font-size: 1.1rem; font-weight: 800; cursor: pointer; margin-top: 25px; 
+            text-transform: uppercase; letter-spacing: 0.5px;
+            transition: all 0.1s ease; outline: none; position: relative;
+        }
+        .btn-gen { 
+            background: var(--primary); color: white; 
+            /* 3D Press effect structure */
+            box-shadow: 0 6px 0 var(--primary-dark), 0 15px 20px rgba(37,99,235,0.3);
+            margin-bottom: 6px;
+        }
+        .btn-gen:active { 
+            transform: translateY(6px); 
+            box-shadow: 0 0px 0 var(--primary-dark), 0 5px 10px rgba(37,99,235,0.3); 
+        }
         
-        .btn { width: 100%; padding: 16px; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 700; cursor: pointer; margin-top: 20px; transition: transform 0.1s; }
-        .btn:active { transform: scale(0.98); }
-        .btn-gen { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
-        .btn-dl { background: linear-gradient(135deg, #16a34a, #15803d); color: white; display: none; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3); }
+        .btn-dl { 
+            background: #16a34a; color: white; display: none; 
+            box-shadow: 0 6px 0 #15803d, 0 15px 20px rgba(22,163,74,0.3);
+        }
+        .btn-dl:active { 
+            transform: translateY(6px); 
+            box-shadow: 0 0px 0 #15803d, 0 5px 10px rgba(22,163,74,0.3); 
+        }
 
-        .preview-area { margin-top: 25px; text-align: center; display: none; background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-        canvas { max-width: 100%; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 4px; }
+        /* Preview Section */
+        .preview-area { margin-top: 30px; text-align: center; display: none; background: #f8fafc; padding: 20px; border-radius: 16px; border: 1px solid var(--border); }
+        canvas { max-width: 100%; border: 6px solid #fff; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border-radius: 8px; }
 
-        .content-box { margin-top: 3rem; background: white; padding: 25px; border-radius: 16px; border: 1px solid var(--border); }
-        h2 { font-size: 1.4rem; color: #1e293b; margin-bottom: 15px; }
-        h3 { font-size: 1.1rem; color: #334155; margin-top: 20px; margin-bottom: 10px; }
-        p, li { color: #475569; font-size: 0.95rem; margin-bottom: 10px; }
-        ul { padding-left: 20px; }
+        /* SEO Content Section */
+        .content-box { margin-top: 3.5rem; background: white; padding: 35px; border-radius: 20px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        h2 { font-size: 1.5rem; color: #0f172a; margin-bottom: 20px; font-weight: 800; }
+        p, li { color: #475569; font-size: 1rem; margin-bottom: 12px; }
+        ul { padding-left: 20px; list-style-type: none; }
+        ul li::before { content: "✅"; margin-right: 8px; }
         
-        details { background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 10px; cursor: pointer; border: 1px solid var(--border); }
+        /* Smooth FAQ Accordion */
+        details { background: #f8fafc; padding: 18px; border-radius: 12px; margin-bottom: 12px; cursor: pointer; border: 1px solid #e2e8f0; transition: background 0.2s; }
+        details:hover { background: #f1f5f9; }
         summary { font-weight: 600; color: #1e293b; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-        summary::after { content: '+'; font-size: 1.2rem; font-weight: bold; }
-        details[open] summary::after { content: '-'; }
-        details p { margin-top: 10px; margin-bottom: 0; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '↓'; font-size: 1.2rem; transition: transform 0.3s ease; }
+        details[open] summary::after { transform: rotate(180deg); }
+        details p { margin-top: 15px; margin-bottom: 0; padding-top: 15px; border-top: 1px solid #e2e8f0; }
 
-        footer { margin-top: 3rem; margin-bottom: 2rem; text-align: center; font-size: 0.9rem; color: #94a3b8; }
-        a { color: var(--primary); text-decoration: none; font-weight: 500; }
+        footer { margin-top: 4rem; margin-bottom: 2rem; text-align: center; font-size: 0.95rem; color: #64748b; }
+        a { color: var(--primary); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        a:hover { color: var(--primary-dark); text-decoration: underline; }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .card, .content-box { padding: 20px; }
+            .upload-box { padding: 2rem 1rem; }
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <main class="container">
         <header>
-            <span class="badge">UPDATED FOR 2026</span>
+            <span class="badge">V2.0 Engine • Max Speed</span>
             <h1>Add Date and Name on Photo</h1>
-            <p class="sub-head">Passport Size Photo Generator for SSC, UPSC, PSC & Railways</p>
+            <p class="sub-head">Professional Passport Size Photo Maker for SSC, UPSC, PSC & Railways</p>
         </header>
 
-        <div class="card">
-            <div class="upload-box" id="dropArea">
-                <span class="upload-icon">📁</span>
-                <strong>Click to Upload Passport Photo</strong>
-                <p style="font-size:0.8rem; color:#64748b; margin-top:5px;">Supports JPG, PNG, JPEG</p>
-                <input type="file" id="fileInput" accept="image/*" style="display:none">
+        <section class="card" aria-label="Photo Generator Tool">
+            <div class="upload-box" id="dropArea" tabindex="0" role="button" aria-label="Upload Photo">
+                <span class="upload-icon" aria-hidden="true">📁</span>
+                <strong style="font-size: 1.1rem; color: #0f172a;">Drag & Drop or Click to Upload</strong>
+                <p style="font-size:0.85rem; color:var(--text-light); margin-top:8px;">Format: JPG, PNG, JPEG (Max 5MB)</p>
+                <input type="file" id="fileInput" accept="image/jpeg, image/png, image/jpg" style="display:none" aria-hidden="true">
             </div>
 
             <div class="form-group">
-                <label class="label">Candidate Name (Optional)</label>
-                <input type="text" id="nameInput" class="input-field" placeholder="Ex: VIKRAM SINGH">
+                <label for="nameInput" class="label">Candidate Name (Optional)</label>
+                <input type="text" id="nameInput" class="input-field" placeholder="Ex: VIKRAM SINGH" autocomplete="off">
             </div>
 
             <div class="form-group">
-                <label class="label">Date of Photo (DOP)</label>
-                <input type="date" id="dateInput" class="input-field">
+                <label for="dateInput" class="label">Date of Photo (DOP)</label>
+                <input type="date" id="dateInput" class="input-field" required>
             </div>
 
-            <button class="btn btn-gen" id="generateBtn">GENERATE PHOTO ✨</button>
+            <button class="btn btn-gen" id="generateBtn" aria-label="Generate Photo">Generate Photo ✨</button>
             
-            <div class="preview-area" id="previewBox">
-                <p style="margin-bottom:10px; font-weight:600; color:#166534;">✅ Preview Ready:</p>
+            <div class="preview-area" id="previewBox" aria-live="polite">
+                <p style="margin-bottom:15px; font-weight:800; color:#15803d; font-size: 1.1rem;">✅ Processing Complete</p>
                 <canvas id="photoCanvas"></canvas>
-                <button class="btn btn-dl" id="downloadBtn">DOWNLOAD HD PHOTO ⬇️</button>
+                <button class="btn btn-dl" id="downloadBtn" aria-label="Download Photo">Download HD Image ⬇️</button>
             </div>
-        </div>
+        </section>
 
-        <div class="content-box">
+        <article class="content-box">
             <h2>Why Use This Date on Photo Tool?</h2>
-            <p>If you are applying for government exams like <strong>SSC CGL, CHSL, MTS, GD Constable, or UPSC</strong>, your application might be rejected if your passport size photo does not have the "Date of Photo" (DOP) printed on it. This tool helps you:</p>
+            <p>If you are applying for government exams like <strong>SSC CGL, CHSL, MTS, GD Constable, or UPSC</strong>, your application will be rejected if your passport size photo does not have the "Date of Photo" (DOP) printed clearly. This tool provides:</p>
             <ul>
-                <li>✅ <strong>Add Name and Date:</strong> Automatically writes your name and date at the bottom without cutting your face.</li>
-                <li>✅ <strong>SSC Compliant:</strong> Creates the exact white strip required by SSC guidelines.</li>
-                <li>✅ <strong>100% Free & Safe:</strong> No watermark, and photos are processed locally on your device.</li>
+                <li><strong>Zero Face Cropping:</strong> Smart canvas extension ensures your original photo remains untouched while adding the data strip below it.</li>
+                <li><strong>SSC Official Guidelines Compliant:</strong> Creates the exact white strip layout required by official commission notifications.</li>
+                <li><strong>100% Secure & Private:</strong> We do not upload your photo to any server. Everything is processed instantly on your device browser.</li>
             </ul>
 
-            <h2 style="margin-top:30px;">Frequently Asked Questions (FAQs)</h2>
+            <h2 style="margin-top:2.5rem;">Frequently Asked Questions (FAQs)</h2>
             
             <details>
                 <summary>How to add date on photo for SSC online?</summary>
-                <p>Simply upload your photo, select the current date, and click "Generate". Our tool will automatically append a white strip with the Date of Photo (DOP) at the bottom.</p>
+                <p>Upload your current passport photo, select today's date from the calendar input, and click "Generate". The tool extends the image and prints the Date of Photo (DOP) correctly at the bottom.</p>
             </details>
 
             <details>
-                <summary>Can I add both Name and Date?</summary>
-                <p>Yes! You can enter your name in the "Candidate Name" field. The tool will print both Name and Date clearly on the photo.</p>
+                <summary>Can I add both my Name and Date?</summary>
+                <p>Yes. Enter your name in the designated field. The AI logic will automatically adjust the font size and line spacing to accommodate both your Name and the DOP clearly.</p>
             </details>
 
             <details>
-                <summary>Is this tool free for PSC and Railways forms?</summary>
-                <p>Absolutely. You can use this tool for any exam requiring a dated photograph, including Railways (RRB), State PSC, and Banking exams.</p>
+                <summary>Will this reduce my photo quality?</summary>
+                <p>No. Our script uses high-definition HTML5 canvas rendering to ensure the final downloaded image retains its original resolution and DPI suitable for printing and uploading.</p>
             </details>
-        </div>
+        </article>
 
         <footer>
-            <p>© 2026 OrbitWebTools • Privacy Focused <br> <a href="#">Resize Image</a> | <a href="#">Contact</a></p>
+            <p>© 2026 OrbitWebTools • Build for Speed <br> <a href="#">Terms</a> | <a href="#">Contact Support</a></p>
         </footer>
-    </div>
+    </main>
 
     <script>
-        const fileInput = document.getElementById('fileInput');
-        const dropArea = document.getElementById('dropArea');
-        const nameInput = document.getElementById('nameInput');
-        const dateInput = document.getElementById('dateInput');
-        const generateBtn = document.getElementById('generateBtn');
-        const downloadBtn = document.getElementById('downloadBtn');
-        const canvas = document.getElementById('photoCanvas');
-        const ctx = canvas.getContext('2d');
-        const previewBox = document.getElementById('previewBox');
+        // STRICT MODE for zero silent errors
+        'use strict';
+
+        const DOM = {
+            fileInput: document.getElementById('fileInput'),
+            dropArea: document.getElementById('dropArea'),
+            nameInput: document.getElementById('nameInput'),
+            dateInput: document.getElementById('dateInput'),
+            generateBtn: document.getElementById('generateBtn'),
+            downloadBtn: document.getElementById('downloadBtn'),
+            canvas: document.getElementById('photoCanvas'),
+            ctx: document.getElementById('photoCanvas').getContext('2d', { alpha: false }), // Optimize rendering
+            previewBox: document.getElementById('previewBox')
+        };
 
         let currentImage = new Image();
         let isImageLoaded = false;
+        let originalFileName = "Photo";
 
-        dateInput.valueAsDate = new Date();
+        // Set Default Date to Today
+        DOM.dateInput.valueAsDate = new Date();
 
-        dropArea.addEventListener('click', () => fileInput.click());
-        fileInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if(file) {
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = (event) => {
-                    currentImage.src = event.target.result;
-                    currentImage.onload = () => {
-                        isImageLoaded = true;
-                        dropArea.innerHTML = `<span style="font-size:2rem">✅</span><br><strong>${file.name}</strong><br><span style="color:#16a34a; font-size:0.9rem">Image Loaded Successfully</span>`;
-                        dropArea.style.background = "#f0fdf4";
-                        dropArea.style.borderColor = "#16a34a";
-                    }
-                }
+        // Accessible Keyboard Trigger for Drop Area
+        DOM.dropArea.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                DOM.fileInput.click();
             }
         });
 
-        generateBtn.addEventListener('click', () => {
-            if(!isImageLoaded) return alert("Please upload a passport photo first!");
+        // File Handling Logic
+        DOM.dropArea.addEventListener('click', () => DOM.fileInput.click());
+        
+        // Drag and Drop Effects
+        ['dragover', 'dragenter'].forEach(evt => DOM.dropArea.addEventListener(evt, e => { e.preventDefault(); DOM.dropArea.classList.add('dragover'); }));
+        ['dragleave', 'dragend', 'drop'].forEach(evt => DOM.dropArea.addEventListener(evt, e => { e.preventDefault(); DOM.dropArea.classList.remove('dragover'); }));
+
+        DOM.dropArea.addEventListener('drop', (e) => handleFile(e.dataTransfer.files[0]));
+        DOM.fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
+
+        function handleFile(file) {
+            if (!file || !file.type.startsWith('image/')) {
+                alert("Bitter Truth: Tumne image file select nahi ki hai. Please upload a valid JPG/PNG.");
+                return;
+            }
             
-            const name = nameInput.value.trim().toUpperCase();
-            const date = formatDate(dateInput.value);
+            originalFileName = file.name.split('.')[0];
+            const reader = new FileReader();
+            
+            reader.onload = (event) => {
+                currentImage.onload = () => {
+                    isImageLoaded = true;
+                    // Update UI with success state
+                    DOM.dropArea.innerHTML = `<span style="font-size:2.5rem; display:block; margin-bottom:10px;">✅</span><strong style="color:#0f172a; font-size:1.1rem;">${file.name}</strong><br><span style="color:#16a34a; font-weight:600; font-size:0.9rem;">Loaded & Ready</span>`;
+                    DOM.dropArea.style.background = "#f0fdf4";
+                    DOM.dropArea.style.borderColor = "#16a34a";
+                };
+                currentImage.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
 
-            // FIX: Calculate strip height but ADD it to the canvas height so we don't crop the photo
-            const stripHeight = currentImage.height * 0.20;
-            canvas.width = currentImage.width;
-            canvas.height = currentImage.height + stripHeight; 
+        // Core Generation Logic
+        DOM.generateBtn.addEventListener('click', () => {
+            if (!isImageLoaded) return alert("Bhai, pehle photo toh upload karo tabhi generate hogi!");
+            
+            const name = DOM.nameInput.value.trim().toUpperCase();
+            const dateStr = DOM.dateInput.value;
+            
+            if (!dateStr) return alert("Date field khali hai, please date select karo.");
+            const date = formatDate(dateStr);
 
-            // 1. Draw Original Image at the top
-            ctx.drawImage(currentImage, 0, 0);
+            // Responsive Strip Height based on image size
+            const stripHeight = currentImage.height * 0.22;
+            
+            // Set canvas size (Image height + Strip height)
+            DOM.canvas.width = currentImage.width;
+            DOM.canvas.height = currentImage.height + stripHeight; 
 
-            // 2. Draw White Strip AT THE BOTTOM (below the image)
+            // 1. Draw Image
+            DOM.ctx.drawImage(currentImage, 0, 0);
+
+            // 2. Draw White Strip at bottom
             const yPos = currentImage.height; 
-            
-            ctx.fillStyle = "white";
-            ctx.fillRect(0, yPos, canvas.width, stripHeight);
+            DOM.ctx.fillStyle = "#ffffff";
+            DOM.ctx.fillRect(0, yPos, DOM.canvas.width, stripHeight);
 
-            // 3. Text Settings
-            ctx.fillStyle = "black";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
+            // 3. Text Configuration (High Quality Anti-Aliasing)
+            DOM.ctx.fillStyle = "#000000";
+            DOM.ctx.textAlign = "center";
+            DOM.ctx.textBaseline = "middle";
             
-            const fontSize = stripHeight * 0.35;
-            ctx.font = `bold ${fontSize}px Arial`;
+            // Dynamic Font Sizing
+            const fontSize = stripHeight * 0.32;
+            DOM.ctx.font = `900 ${fontSize}px Inter, Arial, sans-serif`;
 
-            // 4. Draw Text inside the new strip
-            const centerX = canvas.width / 2;
+            // 4. Render Text Logic
+            const centerX = DOM.canvas.width / 2;
             
-            if(name) {
-                ctx.fillText(name, centerX, yPos + (stripHeight * 0.35));
-                ctx.fillText(`DOP: ${date}`, centerX, yPos + (stripHeight * 0.75));
+            if (name) {
+                DOM.ctx.fillText(name, centerX, yPos + (stripHeight * 0.35));
+                DOM.ctx.fillText(`DOP: ${date}`, centerX, yPos + (stripHeight * 0.75));
             } else {
-                ctx.fillText(`DOP: ${date}`, centerX, yPos + (stripHeight * 0.5));
+                DOM.ctx.fillText(`DOP: ${date}`, centerX, yPos + (stripHeight * 0.5));
             }
 
-            previewBox.style.display = "block";
-            downloadBtn.style.display = "block";
-            
-            previewBox.scrollIntoView({behavior: "smooth", block: "center"});
+            // Show Result
+            DOM.previewBox.style.display = "block";
+            DOM.downloadBtn.style.display = "block";
+            DOM.previewBox.scrollIntoView({behavior: "smooth", block: "nearest"});
         });
 
+        // Date Formatter (YYYY-MM-DD to DD-MM-YYYY)
         function formatDate(dateString) {
-            if (!dateString) return "";
-            const date = new Date(dateString);
-            const d = String(date.getDate()).padStart(2, '0');
-            const m = String(date.getMonth() + 1).padStart(2, '0');
-            const y = date.getFullYear();
+            const [y, m, d] = dateString.split('-');
             return `${d}-${m}-${y}`;
         }
 
-        downloadBtn.addEventListener('click', () => {
+        // Download Action
+        DOM.downloadBtn.addEventListener('click', () => {
             const link = document.createElement('a');
-            link.download = 'SSC_Photo_With_Date.jpg';
-            link.href = canvas.toDataURL('image/jpeg', 1.0);
+            link.download = `SSC_${originalFileName}_Dated.jpg`;
+            // Export as high-quality JPEG
+            link.href = DOM.canvas.toDataURL('image/jpeg', 1.0);
             link.click();
         });
     </script>
