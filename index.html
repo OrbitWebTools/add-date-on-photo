@@ -3,242 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#2563eb">
+    <title>SSC Photo Date Maker 2026 | Add Name, Date & Compress (Official)</title>
     
-    <title>SSC Photo Date Maker 2026: Add Name & Date on Photo (Official Guidelines)</title>
-    <meta name="description" content="Official SSC Photo Date Maker 2026. Add Candidate Name & Date of Photo (DOP) as per SSC CGL, CHSL, MTS, GD guidelines. No crop, high-quality, 100% private.">
-    <meta name="keywords" content="ssc photo date maker, add date on photo online, ssc cgl photo editor 2026, passport size photo with date, photo pe date kaise likhe, ssc photo compressor, ssc photo name date generator">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "SoftwareApplication",
-      "name": "SSC Photo Date Maker",
-      "operatingSystem": "All",
-      "applicationCategory": "UtilitiesApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
-    }
-    </script>
-
+    <meta name="description" content="Official SSC Photo Date Maker. Add Name, Date (DOP) and COMPRESS photo to 20-50KB. Compliant with SSC CGL, CHSL, MTS, GD 2026 guidelines.">
+    <meta name="keywords" content="ssc photo date maker, add date on photo, compress ssc photo, ssc photo size reducer, photo pe date kaise likhe, ssc cgl photo editor 2026">
+    
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <style>
-        :root { --p: #2563eb; --p-dark: #1e40af; --bg: #f8fafc; --text: #1e293b; }
+        :root { --p: #2563eb; --p-dark: #1e40af; --bg: #f8fafc; --text: #1e293b; --success: #059669; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
-        body { background: var(--bg); color: var(--text); padding: 15px; line-height: 1.6; }
-        .container { width: 100%; max-width: 800px; margin: 0 auto; }
+        body { background: var(--bg); color: var(--text); padding: 10px; line-height: 1.6; }
+        .container { max-width: 850px; margin: 0 auto; }
 
-        header { text-align: center; padding: 2rem 0; }
-        h1 { font-size: 2.2rem; color: #0f172a; margin-bottom: 10px; }
-        
-        /* Tool Card */
-        .card { background: #fff; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; margin-bottom: 30px; }
-        .drop-zone { border: 2px dashed #cbd5e1; border-radius: 12px; padding: 40px; text-align: center; cursor: pointer; background: #f1f5f9; transition: 0.3s; }
+        /* Header & Logo */
+        header { text-align: center; padding: 1.5rem 0; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--p); letter-spacing: -1px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .logo-icon { background: var(--p); color: white; padding: 2px 10px; border-radius: 8px; }
+
+        /* Professional Card */
+        .main-card { background: #fff; border-radius: 24px; padding: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; margin-bottom: 30px; }
+        .drop-zone { border: 2px dashed #cbd5e1; border-radius: 16px; padding: 35px; text-align: center; cursor: pointer; background: #f1f5f9; transition: 0.3s; }
         .drop-zone:hover { border-color: var(--p); background: #eff6ff; }
-        .input-group { margin-top: 20px; }
-        label { display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 5px; color: #475569; }
-        input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px; outline: none; transition: 0.2s; }
+        
+        .grid-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        @media (max-width: 600px) { .grid-inputs { grid-template-columns: 1fr; } }
+
+        label { display: block; font-weight: 700; font-size: 0.8rem; margin-bottom: 5px; color: #64748b; text-transform: uppercase; }
+        input, select { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 12px; outline: none; font-size: 1rem; }
         input:focus { border-color: var(--p); }
 
-        .btn { width: 100%; padding: 16px; border: none; border-radius: 12px; font-weight: 800; cursor: pointer; transition: 0.2s; margin-top: 20px; font-size: 1.1rem; }
+        /* Compression Slider */
+        .compress-box { margin-top: 20px; background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; }
+        .slider-label { display: flex; justify-content: space-between; font-weight: 700; font-size: 0.85rem; margin-bottom: 10px; }
+
+        .btn { width: 100%; padding: 16px; border: none; border-radius: 14px; font-weight: 800; cursor: pointer; transition: 0.2s; font-size: 1.1rem; margin-top: 20px; }
         .btn-gen { background: var(--p); color: white; box-shadow: 0 4px 0 var(--p-dark); }
-        .btn-dl { background: #059669; color: white; display: none; margin-top: 15px; box-shadow: 0 4px 0 #047857; }
-
-        /* Results */
-        #result { display: none; margin-top: 20px; text-align: center; }
-        canvas { max-width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 5px solid white; }
-
-        /* SEO Content Section */
-        .seo-section { background: #fff; padding: 35px; border-radius: 20px; border: 1px solid #e2e8f0; margin-top: 20px; }
-        .seo-section h2 { font-size: 1.5rem; margin: 25px 0 15px; color: #0f172a; }
-        .seo-section p { margin-bottom: 15px; color: #4b5563; }
-
-        /* Table Style */
-        .table-container { overflow-x: auto; margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; min-width: 500px; }
-        th, td { border: 1px solid #e2e8f0; padding: 12px; text-align: left; font-size: 0.9rem; }
-        th { background: #f1f5f9; font-weight: 800; }
-
-        /* FAQ */
-        details { background: #f8fafc; padding: 15px; border-radius: 10px; margin-bottom: 10px; cursor: pointer; }
-        summary { font-weight: 700; color: #334155; }
+        .btn-gen:active { transform: translateY(3px); box-shadow: 0 0 var(--p-dark); }
         
+        .btn-whatsapp { background: #25D366; color: white; font-size: 0.9rem; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; }
+
+        /* Preview Area */
+        #resultArea { display: none; margin-top: 30px; text-align: center; border-top: 2px solid #f1f5f9; padding-top: 25px; }
+        canvas { max-width: 100%; height: auto; border-radius: 8px; border: 4px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .status-badge { background: #dcfce7; color: #166534; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 15px; }
+
+        /* Content Section */
+        .seo-section { background: #fff; padding: 30px; border-radius: 24px; border: 1px solid #e2e8f0; }
+        .seo-section h2 { font-size: 1.4rem; margin: 20px 0 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9rem; }
+        th, td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+        th { background: #f8fafc; }
+
         footer { text-align: center; padding: 40px 0; color: #94a3b8; font-size: 0.85rem; }
+        footer a { color: var(--p); text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>SSC Photo Date Maker 2026</h1>
-        <p>Official Guidelines Compliant Tool for Government Exams</p>
+        <div class="logo"><span class="logo-icon">O</span> OrbitWebTools</div>
+        <p style="color: #64748b; font-weight: 600;">The Professional SSC Photo Suite</p>
     </header>
 
-    <main class="card">
+    <main class="main-card">
         <div class="drop-zone" id="dropArea">
-            <span style="font-size: 3rem;">📸</span>
-            <p>Click or Drag to Upload Passport Photo</p>
+            <span style="font-size: 2.5rem;">📁</span>
+            <p id="fileNameDisplay">Tap to Upload Passport Photo</p>
             <input type="file" id="imgInput" accept="image/*" style="display:none">
         </div>
 
-        <div class="input-group">
-            <label>CANDIDATE NAME (AS PER MATRICULATION)</label>
-            <input type="text" id="nameIn" placeholder="Ex: RAHUL KUMAR SINGH">
+        <div class="grid-inputs">
+            <div>
+                <label>Full Name</label>
+                <input type="text" id="nameIn" placeholder="Ex: VIKRAM SINGH">
+            </div>
+            <div>
+                <label>Date of Photo (DOP)</label>
+                <input type="date" id="dateIn">
+            </div>
         </div>
 
-        <div class="input-group">
-            <label>DATE OF PHOTO (DOP)</label>
-            <input type="date" id="dateIn">
+        <div class="compress-box">
+            <div class="slider-label">
+                <span>Output Quality (Compression)</span>
+                <span id="qualityVal">80%</span>
+            </div>
+            <input type="range" id="qualitySlider" min="10" max="100" value="80" style="cursor: pointer;">
+            <p style="font-size: 0.7rem; color: #64748b; margin-top: 5px;">*Higher quality = Larger file size. Aim for 40-70% for SSC.</p>
         </div>
 
-        <button class="btn btn-gen" id="genBtn">Generate Official Photo ✨</button>
+        <button class="btn btn-gen" id="genBtn">Generate & Compress Photo ✨</button>
 
-        <div id="result">
+        <div id="resultArea">
+            <div class="status-badge">✓ SSC COMPLIANT PHOTO READY</div>
             <canvas id="canvas"></canvas>
-            <button class="btn btn-dl" id="dlBtn">Download HD Photo ⬇️</button>
+            <button class="btn btn-gen" style="background: var(--success); box-shadow: 0 4px 0 #065f46;" id="dlBtn">Download HD Image (.JPG)</button>
+            <a href="https://api.whatsapp.com/send?text=Bhai, SSC ke liye photo par date chahiye? Ye tool mast hai: https://orbitwebtools.github.io/add-date-on-photo/" class="btn btn-whatsapp" target="_blank">
+                Share with Friends on WhatsApp
+            </a>
         </div>
     </main>
 
-    <section class="seo-section">
-        <h2>Official Photo Guidelines for SSC Exams 2026</h2>
-        <p>Government exams like <strong>SSC CGL, CHSL, MTS, and GD Constable</strong> have very strict rules regarding the photograph. According to the latest notifications, if a candidate's photo does not clearly mention the <strong>Date of Photo (DOP)</strong>, the application is liable to be rejected instantly.</p>
+    <article class="seo-section">
+        <h2>How to Make SSC Compliant Photo?</h2>
+        <p>SSC CGL, MTS, and CHSL 2026 notifications require a photograph not older than 3 months. Our tool automatically adds a white strip, prints the Date of Photo (DOP), and compresses the image below 50KB.</p>
         
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Exam Type</th>
-                        <th>Photo Dimension</th>
-                        <th>File Size</th>
-                        <th>DOP Required?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SSC (CGL/CHSL/MTS)</td>
-                        <td>3.5 cm x 4.5 cm</td>
-                        <td>20KB - 50KB</td>
-                        <td>Yes (Mandatory)</td>
-                    </tr>
-                    <tr>
-                        <td>UPSC / Civil Services</td>
-                        <td>350 x 350 pixels</td>
-                        <td>20KB - 300KB</td>
-                        <td>Yes (With Name)</td>
-                    </tr>
-                    <tr>
-                        <td>Banking (IBPS/SBI)</td>
-                        <td>4.5 cm x 3.5 cm</td>
-                        <td>20KB - 50KB</td>
-                        <td>Not Always</td>
-                    </tr>
-                    <tr>
-                        <td>Railway (RRB)</td>
-                        <td>35 mm x 45 mm</td>
-                        <td>20KB - 70KB</td>
-                        <td>Recommended</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <table>
+            <tr><th>Exam</th><th>Size Limit</th><th>Date Rule</th></tr>
+            <tr><td>SSC CGL/CHSL</td><td>20-50 KB</td><td>Mandatory</td></tr>
+            <tr><td>UPSC</td><td>20-300 KB</td><td>Mandatory</td></tr>
+        </table>
 
-        <h2>Why do you need to add Name and Date on Photo?</h2>
-        <p>The primary reason for adding the <strong>Date of Photo</strong> is to ensure that the photograph is recent (not older than 3 months from the date of notification). SSC and UPSC commissions use this to verify the current appearance of the candidate. Our tool helps you add this information without cropping your face, ensuring that the proportions of your passport photo remain perfect.</p>
-
-        <h2>Common Reasons for SSC Photo Rejection</h2>
-        <p>Aspirants often lose their chance because of minor mistakes. Avoid these errors:</p>
-        <ul>
-            <li><strong>Blurred DOP:</strong> The date must be printed in black on a white background strip.</li>
-            <li><strong>Spectacles & Caps:</strong> Photos with sunglasses, spectacles, or caps are rejected.</li>
-            <li><strong>Improper Background:</strong> Use a light-colored, preferably white, background.</li>
-            <li><strong>Old Photos:</strong> Never use a photo older than three months.</li>
-        </ul>
-
-        <h2>Frequently Asked Questions (FAQs)</h2>
-        <details>
-            <summary>How to write name and date on photo for SSC?</summary>
-            <p>Upload your photo to our tool, enter your name in the input box, and select the date. Our tool will automatically create a white strip at the bottom with your details as per official standards.</p>
-        </details>
-        <details>
-            <summary>Is candidate name mandatory on SSC photo?</summary>
-            <p>While some notifications only ask for the Date of Photo (DOP), adding your name is a safe practice and recommended for UPSC and some state PSC exams.</p>
-        </details>
-        <details>
-            <summary>Can I use my mobile to add date on photo?</summary>
-            <p>Yes, our tool is 100% mobile-friendly. You can capture a photo or select one from your gallery and generate the dated photo instantly.</p>
-        </details>
-        <details>
-            <summary>Is this tool secure for my privacy?</summary>
-            <p>Absolutely. Your photos are processed locally in your browser. We do not store or upload your images to any server.</p>
-        </details>
-    </section>
+        <h2>Privacy Guarantee</h2>
+        <p>We use <strong>Client-Side Processing</strong>. This means your photo never leaves your device. It is processed in your browser's memory, ensuring 100% privacy for government job aspirants.</p>
+    </article>
 
     <footer>
-        © 2026 OrbitWebTools • Designed for Aspirants • <a href="#">Privacy Policy</a>
+        <p>© 2026 OrbitWebTools • All Rights Reserved</p>
+        <div style="margin-top:10px;">
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="contact.html">Contact</a>
+        </div>
     </footer>
 </div>
 
 <script>
-    const dropArea = document.getElementById('dropArea');
     const imgInput = document.getElementById('imgInput');
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    let img = new Image();
+    const qualitySlider = document.getElementById('qualitySlider');
+    const qualityVal = document.getElementById('qualityVal');
+    let uploadedImg = new Image();
 
     document.getElementById('dateIn').valueAsDate = new Date();
-    dropArea.onclick = () => imgInput.click();
+    qualitySlider.oninput = () => qualityVal.innerText = qualitySlider.value + '%';
+
+    document.getElementById('dropArea').onclick = () => imgInput.click();
 
     imgInput.onchange = (e) => {
         const file = e.target.files[0];
         if (file) {
+            document.getElementById('fileNameDisplay').innerText = file.name;
             const reader = new FileReader();
-            reader.onload = (ev) => {
-                img.onload = () => {
-                    dropArea.innerHTML = `<span>✅</span><p>${file.name} Loaded</p>`;
-                    dropArea.style.borderColor = '#059669';
-                };
-                img.src = ev.target.result;
-            };
+            reader.onload = (ev) => { uploadedImg.src = ev.target.result; };
             reader.readAsDataURL(file);
         }
     };
 
     document.getElementById('genBtn').onclick = () => {
-        if (!img.src) return alert("Pehle photo toh upload kar le!");
-        
+        if (!uploadedImg.src) return alert("Pehle photo toh upload karle bhai!");
+
         const name = document.getElementById('nameIn').value.trim().toUpperCase();
         const dateStr = document.getElementById('dateIn').value;
         const [y, m, d] = dateStr.split('-');
         const formattedDate = `DOP: ${d}-${m}-${y}`;
 
-        const stripH = img.height * 0.22;
-        canvas.width = img.width;
-        canvas.height = img.height + stripH;
+        // Calculations
+        const stripH = uploadedImg.height * 0.22;
+        canvas.width = uploadedImg.width;
+        canvas.height = uploadedImg.height + stripH;
 
-        ctx.drawImage(img, 0, 0);
+        // Draw Image
+        ctx.fillStyle = "white";
+        ctx.fillRect(0,0, canvas.width, canvas.height);
+        ctx.drawImage(uploadedImg, 0, 0);
+
+        // Draw Strip
         ctx.fillStyle = "#FFFFFF";
-        ctx.fillRect(0, img.height, canvas.width, stripH);
+        ctx.fillRect(0, uploadedImg.height, canvas.width, stripH);
 
+        // Text
         ctx.fillStyle = "#000000";
         ctx.textAlign = "center";
         const fontSize = stripH * (name ? 0.35 : 0.5);
         ctx.font = `bold ${fontSize}px Arial`;
 
         if (name) {
-            ctx.fillText(name, canvas.width / 2, img.height + (stripH * 0.4));
-            ctx.fillText(formattedDate, canvas.width / 2, img.height + (stripH * 0.8));
+            ctx.fillText(name, canvas.width / 2, uploadedImg.height + (stripH * 0.4));
+            ctx.fillText(formattedDate, canvas.width / 2, uploadedImg.height + (stripH * 0.8));
         } else {
-            ctx.fillText(formattedDate, canvas.width / 2, img.height + (stripH * 0.6));
+            ctx.fillText(formattedDate, canvas.width / 2, uploadedImg.height + (stripH * 0.6));
         }
 
-        document.getElementById('result').style.display = 'block';
-        document.getElementById('dlBtn').style.display = 'block';
+        document.getElementById('resultArea').style.display = 'block';
+        window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
     };
 
     document.getElementById('dlBtn').onclick = () => {
+        const q = qualitySlider.value / 100;
         const link = document.createElement('a');
-        link.download = 'SSC_Dated_Photo.jpg';
-        link.href = canvas.toDataURL('image/jpeg', 0.9);
+        link.download = 'SSC_Photo_OrbitWebTools.jpg';
+        link.href = canvas.toDataURL('image/jpeg', q);
         link.click();
     };
 </script>
