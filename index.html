@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotoReady | Add Date in Passport Photo Online</title>
     
-    <meta name="description" content="Add Name & Date on passport photo online. Free tool for SSC, UPSC & Govt exams. Auto-compress 20-50KB. 100% Private.">
-    <meta name="keywords" content="how to add date in passport size photo, add only date in passport size photo, ssc photo date maker">
+    <title>How to Add Date in Passport Size Photo Online (Free Tool)</title>
+    <meta name="description" content="Learn how to add date in passport size photo or add ONLY date without name. Free online tool for SSC, UPSC, and Govt exams. Auto-compress to 20-50KB.">
+    <meta name="keywords" content="how to add date in passport size photo, add only date in passport size photo, date in passport size photo, how to add date on passport size photo, ssc photo date maker">
     
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://photoready.in/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="📸 Add Date in Passport Size Photo in 10 Seconds">
+    <meta property="og:description" content="Add Name & Date or ONLY Date on your passport photo. Perfect for SSC/UPSC. 100% Private.">
+    <meta property="og:image" content="https://photoready.in/banner.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Syne:wght@800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to add date in passport size photo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply upload your photo to our free tool, select the 'Date of Photo', and click Generate. Our tool will automatically add the date at the bottom in a white strip format required for official forms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add ONLY date in passport size photo without name?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Just leave the 'Candidate Name' field blank. The tool will automatically center and add ONLY the date on your passport size photo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should be the size of the photo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For SSC and UPSC exams, the photo size must be strictly between 20KB and 50KB. Our tool has a built-in compressor slider to adjust the file size instantly."
+          }
+        }
+      ]
+    }
+    </script>
 
     <style>
         :root {
@@ -22,129 +63,135 @@
             --text: #f8fafc;
             --text-muted: #94a3b8;
             --glass-border: rgba(255, 255, 255, 0.1);
+            --success: #10b981;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background: var(--bg); 
-            background-image: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-                              radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+            background-image: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                              radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
             color: var(--text); 
             line-height: 1.6;
-            overflow-x: hidden;
             min-height: 100vh;
         }
 
         /* --- 🚀 3D LOADING SCREEN --- */
         #loader {
-            position: fixed;
-            inset: 0;
-            background: var(--bg);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            position: fixed; inset: 0; background: var(--bg); z-index: 9999;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
             transition: opacity 0.5s ease, visibility 0.5s;
         }
         .spinner-3d {
-            width: 60px;
-            height: 60px;
-            border: 4px solid transparent;
-            border-top: 4px solid var(--primary);
-            border-right: 4px solid var(--accent);
-            border-radius: 50%;
-            animation: spin3d 1s linear infinite;
-            box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+            width: 60px; height: 60px; border: 4px solid transparent;
+            border-top: 4px solid var(--primary); border-right: 4px solid var(--accent);
+            border-radius: 50%; animation: spin3d 1s linear infinite; box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
         }
         @keyframes spin3d { to { transform: rotate(360deg); } }
         .loading-text { margin-top: 20px; font-family: 'Syne', sans-serif; letter-spacing: 2px; color: var(--primary); font-size: 0.9rem; }
 
-        /* --- 💎 MODERN UI LAYOUT --- */
+        /* --- 💎 UI LAYOUT --- */
         .site-wrap { 
-            max-width: 580px; /* Fixed width to prevent "stretched" look */
-            margin: 0 auto; 
-            padding: 40px 20px;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+            max-width: 680px; margin: 0 auto; padding: 40px 20px;
+            opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
         }
         .site-wrap.loaded { opacity: 1; transform: translateY(0); }
 
         .header { text-align: center; margin-bottom: 40px; }
         .logo { font-family: 'Syne', sans-serif; font-size: 2rem; color: #fff; text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px; }
-        .logo i { font-style: normal; text-shadow: 0 0 15px var(--primary); }
-        .header p { color: var(--text-muted); font-size: 0.9rem; }
+        .header h1 { font-size: 1.6rem; margin-bottom: 10px; color: var(--text); line-height: 1.3; font-family: 'Syne', sans-serif; }
+        .header p { color: var(--text-muted); font-size: 0.95rem; }
 
         /* --- 🛡️ THE GLASS CARD --- */
         .glass-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid var(--glass-border);
-            border-radius: 28px;
-            padding: 30px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
+            background: var(--card-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border); border-radius: 28px; padding: 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); margin-bottom: 30px;
         }
-        .glass-card:hover { transform: perspective(1000px) rotateX(2deg); }
 
-        /* --- 📁 3D UPLOAD ZONE --- */
+        /* --- 📁 UPLOAD ZONE --- */
         .upload-area {
-            border: 2px dashed rgba(255,255,255,0.2);
-            border-radius: 20px;
-            padding: 40px 20px;
-            text-align: center;
-            cursor: pointer;
-            background: rgba(255,255,255,0.03);
-            transition: 0.3s;
-            position: relative;
+            border: 2px dashed rgba(255,255,255,0.2); border-radius: 20px; padding: 40px 20px;
+            text-align: center; cursor: pointer; background: rgba(255,255,255,0.03); transition: 0.3s;
         }
         .upload-area:hover { border-color: var(--primary); background: rgba(99, 102, 241, 0.05); }
-        .upload-icon { font-size: 2.5rem; margin-bottom: 15px; display: block; filter: drop-shadow(0 5px 10px rgba(99,102,241,0.4)); }
-
+        .upload-icon { font-size: 2.5rem; margin-bottom: 15px; display: block; }
+        
         .preview-row { display: none; align-items: center; gap: 15px; margin-top: 20px; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 15px; }
         .preview-row.visible { display: flex; }
         .thumb { width: 50px; height: 65px; object-fit: cover; border-radius: 8px; border: 2px solid var(--primary); }
 
         /* --- ✍️ INPUTS --- */
-        .input-group { margin-top: 25px; }
-        .field { margin-bottom: 20px; }
-        .field label { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 8px; }
-        .field input, .field select {
-            width: 100%; padding: 14px; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); border-radius: 12px; color: #fff; font-family: inherit; outline: none; transition: 0.3s;
+        .input-group { margin-top: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        @media(max-width: 500px){ .input-group { grid-template-columns: 1fr; } }
+        .field label { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+        .field input {
+            width: 100%; padding: 14px; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); 
+            border-radius: 12px; color: #fff; font-family: inherit; outline: none; transition: 0.3s;
         }
-        .field input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1); }
-        .hint { font-size: 0.7rem; color: var(--primary); margin-top: 5px; font-weight: 600; }
+        .field input:focus { border-color: var(--primary); }
+        .hint { font-size: 0.7rem; color: var(--accent); margin-top: 5px; font-weight: 600; display: block;}
 
-        /* --- 🎚️ CUSTOM SLIDER --- */
-        .slider-box { background: rgba(0,0,0,0.2); padding: 20px; border-radius: 18px; margin: 20px 0; }
+        /* --- 🎚️ SLIDER --- */
+        .slider-box { background: rgba(0,0,0,0.2); padding: 20px; border-radius: 18px; margin: 20px 0; border: 1px solid var(--glass-border); }
         .slider-head { display: flex; justify-content: space-between; font-weight: 700; font-size: 0.85rem; margin-bottom: 12px; }
-        #kbOut { color: var(--success); }
+        #kbOut { color: var(--success); font-size: 1.1rem; }
         input[type="range"] { width: 100%; cursor: pointer; accent-color: var(--primary); height: 6px; border-radius: 10px; }
 
         /* --- ⚡ BUTTONS --- */
         .btn {
-            width: 100%; padding: 18px; border: none; border-radius: 16px; font-family: 'Syne', sans-serif; font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 1rem; position: relative; overflow: hidden;
+            width: 100%; padding: 18px; border: none; border-radius: 16px; font-family: 'Syne', sans-serif; font-weight: 800; cursor: pointer; transition: 0.3s; font-size: 1rem; color: white;
         }
-        .btn-main {
-            background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; margin-top: 10px; box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
-        }
+        .btn-main { background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4); }
         .btn-main:hover { transform: translateY(-3px); box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.6); }
 
         /* --- 🖼️ RESULT --- */
-        #result { display: none; margin-top: 40px; animation: fadeInUp 0.5s ease forwards; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        canvas { max-width: 100%; height: auto; border-radius: 20px; border: 5px solid rgba(255,255,255,0.05); margin: 20px 0; box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+        #result { display: none; text-align: center; }
+        canvas { max-width: 100%; height: auto; border-radius: 12px; border: 4px solid rgba(255,255,255,0.1); margin: 20px 0; }
         .action-btns { display: flex; gap: 12px; }
-        .btn-dl { background: var(--success); color: white; flex: 2; }
-        .btn-wa { background: #25D366; color: white; flex: 1; }
+        .btn-dl { background: var(--success); flex: 2; }
+        .btn-wa { background: #25D366; flex: 1; }
 
-        /* --- 📚 SEO CONTENT --- */
-        .seo-box { margin-top: 50px; padding: 30px; background: rgba(255,255,255,0.02); border-radius: 24px; border: 1px solid var(--glass-border); }
-        .seo-box h2 { font-family: 'Syne', sans-serif; font-size: 1.2rem; margin-bottom: 15px; color: var(--primary); }
-        .seo-box p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; }
+        /* ======================================================== */
+        /* 📚 MASSIVE SEO CONTENT SECTION (STYLED FOR DARK THEME)   */
+        /* ======================================================== */
+        .seo-container {
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+        }
+        .seo-container h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+        .seo-container h2:first-child { margin-top: 0; }
+        .seo-container p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        .seo-container ul { margin-left: 20px; margin-bottom: 20px; color: var(--text-muted); }
+        .seo-container li { margin-bottom: 10px; font-size: 0.95rem; }
+        .seo-container strong { color: var(--text); font-weight: 600; }
+
+        .faq-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+        }
+        .faq-item h3 { font-size: 1rem; color: var(--text); margin-bottom: 8px; font-weight: 600; }
+        .faq-item p { margin-bottom: 0; font-size: 0.9rem; }
     </style>
 </head>
 
@@ -158,28 +205,29 @@
     <div class="site-wrap" id="mainWrap">
         <header class="header">
             <a href="/" class="logo"><i>📸</i> Photo<span>Ready</span></a>
-            <p>Add Date & Name on Passport Photo Instantly</p>
+            <h1>How to Add Date in Passport Size Photo Instantly</h1>
+            <p>Generate exact 20-50KB compliant photos for Govt Exams.</p>
         </header>
 
         <div class="glass-card">
             <div class="upload-area" id="dropZone">
                 <span class="upload-icon">📂</span>
-                <h3>Upload Your Photo</h3>
-                <p style="font-size: 0.8rem; opacity: 0.6;">Select JPG, PNG or WEBP (Max 5MB)</p>
+                <h3>Click or Drag Photo Here</h3>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">100% Private (No server upload)</p>
             </div>
             <input type="file" id="fileIn" style="display:none" accept="image/*">
 
             <div class="preview-row" id="pRow">
                 <img id="pThumb" class="thumb">
-                <div style="flex:1; font-weight:600; font-size:0.8rem; overflow:hidden; text-overflow:ellipsis;" id="pFileName"></div>
+                <div style="flex:1; font-weight:600; font-size:0.85rem;" id="pFileName"></div>
                 <button style="color:var(--primary); background:none; border:none; font-weight:800; cursor:pointer;" onclick="document.getElementById('fileIn').click()">EDIT</button>
             </div>
 
             <div class="input-group">
                 <div class="field">
                     <label>Candidate Full Name</label>
-                    <input type="text" id="nameIn" placeholder="Ex: RAHUL SHARMA">
-                    <p class="hint">✨ Leave blank to add ONLY Date</p>
+                    <input type="text" id="nameIn" placeholder="Ex: RAHUL SHARMA" autocomplete="off" spellcheck="false">
+                    <span class="hint">✨ Leave blank to add ONLY Date</span>
                 </div>
                 <div class="field">
                     <label>Date of Photo (DOP)</label>
@@ -189,53 +237,73 @@
 
             <div class="slider-box">
                 <div class="slider-head">
-                    <span>Target File Size</span>
+                    <span>Compress File Size</span>
                     <span id="kbOut">--- KB</span>
                 </div>
                 <input type="range" id="qSlider" min="5" max="100" value="80">
-                <p style="text-align:center; font-size:0.65rem; color:var(--text-muted); margin-top:8px;">Aim for 20KB - 50KB for Govt Exams</p>
+                <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Slide to keep between <strong>20KB - 50KB</strong></p>
             </div>
 
-            <button class="btn btn-main" id="genBtn">GENERATE PHOTO</button>
+            <button class="btn btn-main" id="genBtn">✨ GENERATE PHOTO</button>
         </div>
 
-        <div id="result">
-            <div class="glass-card" style="text-align:center;">
-                <h3 style="font-family:'Syne'; font-size:1.1rem; color:var(--success);">✨ Ready for Download</h3>
-                <canvas id="mainCanvas"></canvas>
-                <div class="action-btns">
-                    <button class="btn btn-dl" id="dlBtn">DOWNLOAD JPG</button>
-                    <button class="btn btn-wa" id="waBtn">SHARE</button>
-                </div>
+        <div id="result" class="glass-card">
+            <h3 style="font-family:'Syne'; color:var(--success);">✅ Success! Download Now</h3>
+            <canvas id="mainCanvas"></canvas>
+            <div class="action-btns">
+                <button class="btn btn-dl" id="dlBtn">⬇️ DOWNLOAD JPG</button>
+                <button class="btn btn-wa" id="waBtn">💬 SHARE</button>
             </div>
         </div>
 
-        <section class="seo-box">
-            <h2>Add Date in Passport Size Photo Online</h2>
-            <p>Government exam portals like SSC (CGL, CHSL, MTS) and UPSC require candidates to have their Date of Photo (DOP) printed. This tool helps you add only date in passport size photo or name and date together without any technical skills.</p>
-            <h2>Is it Private?</h2>
-            <p>Yes! 100% Private. This tool runs directly in your browser using JavaScript. No photo is ever uploaded to any server. Your data stays with you.</p>
-        </section>
-    </div>
+        <div class="seo-container">
+            <h2>Add Only Date in Passport Size Photo</h2>
+            <p>Are you applying for SSC CGL, CHSL, MTS, or UPSC exams and wondering <strong>how to add date on passport size photo</strong>? You are at the right place. Most government portals strictly reject forms if the photo does not follow the correct format.</p>
+            <p>Using our tool, you can easily <strong>add only date in passport size photo</strong> without needing complex software like Photoshop. If you don't want to print your name, simply leave the "Candidate Name" field blank, and the tool will perfectly center the Date of Photo (DOP) at the bottom.</p>
 
-    <div class="toast" id="toast"></div>
+            <h2>Step-by-Step Guide</h2>
+            <ul>
+                <li><strong>Step 1:</strong> Upload your original scanned photograph.</li>
+                <li><strong>Step 2:</strong> To <strong>add date in passport size photo</strong>, select the exact date when the photo was taken from the calendar.</li>
+                <li><strong>Step 3:</strong> Use the quality slider to adjust the file size. Ensure the live counter shows a size between <strong>20KB to 50KB</strong>.</li>
+                <li><strong>Step 4:</strong> Click generate and download your application-ready JPG file.</li>
+            </ul>
+
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="faq-item">
+                <h3>Is it mandatory to put a date in passport size photo?</h3>
+                <p>Yes, for exams conducted by SSC and UPSC, it is clearly stated in their official notification that the Date of Photograph (DOP) must be clearly printed at the bottom of the image.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How do I reduce the photo size to 50KB?</h3>
+                <p>After uploading your photo and adding the date, simply move the "Compress File Size" slider to the left. Watch the live KB counter until it drops below 50KB, then click download.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is this tool safe and private?</h3>
+                <p>Absolutely. Our tool processes everything locally on your device's browser using HTML5 Canvas. Your photo is never uploaded, saved, or sent to any external server.</p>
+            </div>
+        </div>
+        </div>
 
     <script>
         const el = (id) => document.getElementById(id);
         const canvas = el('mainCanvas'), ctx = canvas.getContext('2d');
         let loadedImg = null;
 
-        // --- 🕒 LOADER LOGIC ---
         window.addEventListener('load', () => {
             setTimeout(() => {
                 el('loader').style.opacity = '0';
-                el('loader').style.visibility = 'hidden';
+                setTimeout(() => el('loader').style.display = 'none', 500);
                 el('mainWrap').classList.add('loaded');
-            }, 1200);
+            }, 1000);
         });
 
-        // Set Default Date
-        el('dateIn').value = new Date().toISOString().split('T')[0];
+        // Default Date Setup
+        const today = new Date();
+        el('dateIn').value = today.toISOString().split('T')[0];
 
         el('dropZone').onclick = () => el('fileIn').click();
         el('fileIn').onchange = (e) => {
@@ -269,7 +337,7 @@
 
         function draw() {
             if(!loadedImg) return;
-            const w = 275, h = 354; // Standard SSC
+            const w = 275, h = 354; 
             const s = Math.round(h * 0.24);
             canvas.width = w; canvas.height = h + s;
 
@@ -293,7 +361,7 @@
         }
 
         el('genBtn').onclick = () => {
-            if(!loadedImg) { alert("Upload photo first!"); return; }
+            if(!loadedImg) { alert("Please upload a photo first!"); return; }
             updateKB();
             el('result').style.display = "block";
             el('result').scrollIntoView({ behavior: 'smooth' });
@@ -307,7 +375,7 @@
         };
 
         el('waBtn').onclick = () => {
-            const t = encodeURIComponent("Bhai, photo par Date aur Name lagane ka sabse best free tool yahan hai: https://photoready.in/");
+            const t = encodeURIComponent("Bhai, photo par 'ONLY Date' lagane ka sabse best free tool yahan hai: https://photoready.in/");
             window.open(`https://api.whatsapp.com/send?text=${t}`);
         };
     </script>
