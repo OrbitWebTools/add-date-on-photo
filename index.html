@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-IN" class="scroll-smooth">
+<html lang="en-IN" class="scroll-smooth antialiased">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- ========================================== -->
+    <!-- 🚀 ELITE TECHNICAL SEO & META TAGS         -->
+    <!-- ========================================== -->
     <title>How to Add Date in Passport Size Photo Online (Free Tool)</title>
     <meta name="description" content="Learn how to add date in passport size photo or add ONLY date without name. Free online tool for SSC, UPSC, and Govt exams. Auto-compress to 20-50KB.">
     <meta name="keywords" content="how to add date in passport size photo, add only date in passport size photo, date in passport size photo, how to add date on passport size photo, ssc photo date maker">
+    <meta name="author" content="PhotoReady">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="canonical" href="https://photoready.in/">
 
+    <!-- Social Media / Open Graph Tags -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photoready.in/">
     <meta property="og:title" content="📸 Add Date in Passport Size Photo in 10 Seconds">
     <meta property="og:description" content="Add Name & Date or ONLY Date on your passport photo. Perfect for SSC/UPSC. 100% Private.">
     <meta property="og:image" content="https://photoready.in/banner.jpg">
+    <meta property="og:locale" content="en_IN">
 
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Add Date in Passport Size Photo (Free Tool)">
+    <meta name="twitter:description" content="Auto-compress your passport photo to 20-50KB and add Date of Photo (DOP) instantly.">
+    <meta name="twitter:image" content="https://photoready.in/banner.jpg">
+
+    <!-- ========================================== -->
+    <!-- 🧠 ADVANCED GOOGLE SCHEMA (JSON-LD)        -->
+    <!-- ========================================== -->
+    
+    <!-- 1. Web Application Schema (Tells Google this is a Tool) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PhotoReady Passport Date Tool",
+      "url": "https://photoready.in/",
+      "description": "A free online tool to add dates and names to passport size photos and compress them to 20-50KB for government exams like SSC and UPSC.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "featureList": ["Add Date to Photo", "Add Name to Photo", "Compress Photo to 20-50KB", "No Server Upload, 100% Private"]
+    }
+    </script>
+
+    <!-- 2. FAQ Schema (Grabs Rich Snippets in Search Results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,48 +61,49 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How to add date in passport size photo?",
+          "name": "Is it mandatory to put a date in passport size photo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Simply upload your photo to our free tool, select the 'Date of Photo', and click Generate. Our tool will automatically add the date at the bottom in a white strip format required for official forms."
+            "text": "Yes, for exams conducted by SSC and UPSC, it is clearly stated in their official notification that the Date of Photograph (DOP) must be clearly printed at the bottom of the image."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I add ONLY date in passport size photo without name?",
+          "name": "How do I reduce the photo size to 50KB?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Just leave the 'Candidate Name' field blank. The tool will automatically center and add ONLY the date on your passport size photo."
+            "text": "After uploading your photo and adding the date, simply move the 'Compress File Size' slider to the left. Watch the live KB counter until it drops below 50KB, then click download."
           }
         },
         {
           "@type": "Question",
-          "name": "What should be the size of the photo?",
+          "name": "Is this tool safe and private?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For SSC and UPSC exams, the photo size must be strictly between 20KB and 50KB. Our tool has a built-in compressor slider to adjust the file size instantly."
+            "text": "Absolutely. Our tool processes everything locally on your device's browser using HTML5 Canvas. Your photo is never uploaded, saved, or sent to any external server."
           }
         }
       ]
     }
     </script>
 
+    <!-- ========================================== -->
+    <!-- 💎 PREMIUM UI/UX ASSETS & TAILWIND       -->
+    <!-- ========================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
-                    colors: {
-                        primary: '#6366f1',
-                        accent: '#8b5cf6',
-                        dark: '#0f172a',
-                        card: 'rgba(30, 41, 59, 0.7)'
-                    }
+                    fontFamily: { 
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        syne: ['"Syne"', 'sans-serif']
+                    },
+                    colors: { primary: '#6366f1', accent: '#8b5cf6' }
                 }
             }
         }
@@ -74,87 +113,116 @@
         body {
             background-color: #050505;
             color: #f8fafc;
-            background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+            /* Premium dark gradient background */
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.08), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
         }
-        /* Custom Orange Accent Slider */
+
+        /* Sleek entrance animations */
+        .hero-reveal { animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; transform: translateY(20px); }
+        .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+        
+        @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+
+        /* Custom Slider (Lithos inspired, but matching our Indigo/Purple theme) */
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 18px;
-            height: 18px;
+            width: 20px; height: 20px;
             border-radius: 50%;
-            background: #e8702a;
+            background: #6366f1;
             cursor: pointer;
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
             transition: 0.2s;
         }
-        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.1); }
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
     </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans selection:bg-primary selection:text-white antialiased">
 
-    <header class="w-full text-center pt-16 pb-10 px-5">
-        <a href="/" class="inline-flex items-center gap-2 text-2xl font-bold text-white mb-4 hover:opacity-80 transition-opacity">
-            <span class="text-3xl">📸</span> Photo<span class="text-[#e8702a]">Ready</span>
+<body class="min-h-screen flex flex-col items-center">
+
+    <!-- CLEAN, BRANDED HEADER -->
+    <header class="w-full max-w-4xl pt-10 px-5 flex justify-center hero-reveal">
+        <a href="/" class="flex items-center gap-2 text-white hover:opacity-80 transition-opacity">
+            <span class="text-3xl">📸</span>
+            <span class="font-syne text-2xl font-bold tracking-wide">Photo<span class="text-primary">Ready</span></span>
         </a>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-            How to Add Date in Passport Size Photo Instantly
-        </h1>
-        <p class="text-white/60 text-sm md:text-base max-w-xl mx-auto font-medium">
-            Generate exact 20-50KB compliant photos for Govt Exams. 100% Private (No server upload).
-        </p>
     </header>
 
-    <main class="w-full max-w-2xl mx-auto px-5 mb-20 z-10">
-        <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-6 md:p-8 shadow-2xl">
+    <!-- HERO SECTION (H1 is critical for SEO) -->
+    <section class="w-full max-w-2xl px-5 mt-10 mb-12 text-center hero-reveal delay-1">
+        <h1 class="font-syne text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
+            How to Add Date in Passport Size Photo Instantly
+        </h1>
+        <p class="text-white/60 text-sm sm:text-base font-medium max-w-lg mx-auto">
+            Generate exact 20-50KB compliant photos for SSC, UPSC, and Govt Exams. 100% Private browser-based tool.
+        </p>
+    </section>
+
+    <!-- MAIN INTERACTIVE TOOL AREA -->
+    <main class="w-full max-w-2xl px-5 mb-24 z-10 hero-reveal delay-2">
+        <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl">
             
-            <div id="dropZone" class="border-2 border-dashed border-white/20 hover:border-[#e8702a]/60 bg-white/[0.02] rounded-2xl p-12 text-center cursor-pointer transition-all hover:bg-white/5">
-                <span class="text-5xl block mb-4">📂</span>
+            <!-- Upload Dropzone -->
+            <div id="dropZone" class="border-2 border-dashed border-white/20 hover:border-primary/60 bg-white/[0.02] rounded-2xl p-12 text-center cursor-pointer transition-all hover:bg-white/5 group">
+                <span class="text-5xl block mb-4 group-hover:scale-110 transition-transform">📂</span>
                 <h3 class="text-white font-semibold text-lg">Click or Drag Photo Here</h3>
+                <p class="text-white/40 text-xs mt-2">100% Private (No server upload)</p>
             </div>
             <input type="file" id="fileIn" class="hidden" accept="image/*">
 
-            <div id="pRow" class="hidden items-center justify-between bg-white/5 rounded-xl p-3 border border-white/10 mb-6">
-                <div class="flex items-center gap-4">
-                    <img id="pThumb" class="w-12 h-14 object-cover rounded border border-white/20">
-                    <span id="pFileName" class="text-white/80 font-medium text-sm truncate max-w-[150px] md:max-w-[250px]"></span>
-                </div>
-                <button onclick="document.getElementById('fileIn').click()" class="text-xs text-[#e8702a] hover:text-white uppercase font-bold tracking-wider px-3 py-2 transition-colors">Change</button>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-                <div>
-                    <label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2">Candidate Full Name</label>
-                    <input type="text" id="nameIn" placeholder="Ex: RAHUL SHARMA" autocomplete="off" spellcheck="false" class="w-full bg-black/50 border border-white/10 rounded-xl p-3.5 text-white outline-none focus:border-[#e8702a]/60 transition-colors uppercase text-sm">
-                    <span class="block text-xs text-[#e8702a] mt-2 font-semibold">✨ Leave blank to add ONLY Date</span>
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2">Date of Photo (DOP)</label>
-                    <input type="date" id="dateIn" class="w-full bg-black/50 border border-white/10 rounded-xl p-3.5 text-white outline-none focus:border-[#e8702a]/60 transition-colors text-sm [color-scheme:dark]">
-                </div>
-            </div>
-
-            <div class="bg-black/40 border border-white/10 rounded-2xl p-5 mb-6">
-                <div class="flex justify-between items-end mb-4">
-                    <div>
-                        <span class="block text-sm text-white font-semibold">Compress File Size</span>
-                        <span class="block text-xs text-white/50 mt-1">Slide to keep between 20KB - 50KB</span>
+            <!-- Active File Editor -->
+            <div id="editor" class="hidden space-y-6">
+                
+                <!-- File Info Bar -->
+                <div class="flex items-center justify-between bg-black/40 rounded-xl p-3 border border-white/5">
+                    <div class="flex items-center gap-4">
+                        <img id="pThumb" class="w-12 h-14 object-cover rounded border border-white/20">
+                        <span id="pFileName" class="text-white/80 font-medium text-sm truncate max-w-[150px] sm:max-w-[250px]"></span>
                     </div>
-                    <span id="kbOut" class="text-lg font-bold text-white/40">--- KB</span>
+                    <button onclick="document.getElementById('fileIn').click()" class="text-xs text-primary hover:text-white uppercase font-bold tracking-wider px-3 py-2 transition-colors">Change</button>
                 </div>
-                <input type="range" id="qSlider" min="5" max="100" value="80" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none">
+
+                <!-- Input Fields -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2">Candidate Full Name</label>
+                        <input type="text" id="nameIn" placeholder="Ex: RAHUL SHARMA" autocomplete="off" spellcheck="false" class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all uppercase text-sm shadow-inner">
+                        <span class="block text-xs text-accent mt-2 font-semibold">✨ Leave blank to add ONLY Date</span>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-white/50 uppercase tracking-wider mb-2">Date of Photo (DOP)</label>
+                        <input type="date" id="dateIn" class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm shadow-inner [color-scheme:dark]">
+                    </div>
+                </div>
+
+                <!-- Size Compressor -->
+                <div class="bg-black/40 border border-white/10 rounded-2xl p-5 shadow-inner">
+                    <div class="flex justify-between items-end mb-4">
+                        <div>
+                            <span class="block text-sm text-white font-semibold">Compress File Size</span>
+                            <span class="block text-xs text-white/50 mt-1">Target size: <strong>20KB - 50KB</strong></span>
+                        </div>
+                        <span id="kbOut" class="text-xl font-bold text-white/40 tracking-tight">--- KB</span>
+                    </div>
+                    <input type="range" id="qSlider" min="5" max="100" value="80" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none">
+                </div>
+
+                <!-- Generate Button -->
+                <button id="genBtn" class="w-full bg-gradient-to-r from-primary to-accent hover:from-indigo-500 hover:to-purple-500 text-white text-sm font-bold px-6 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-[0_0_20px_rgba(99,102,241,0.3)] uppercase tracking-wide">
+                    ✨ Generate Photo
+                </button>
             </div>
 
-            <button id="genBtn" class="w-full bg-gradient-to-r from-[#e8702a] to-[#d2611f] text-white text-sm font-bold px-6 py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-[#e8702a]/20 uppercase tracking-wide">
-                ✨ Generate Photo
-            </button>
-
+            <!-- Download / Success Result -->
             <div id="result" class="hidden mt-8 pt-8 border-t border-white/10 text-center">
-                <h3 class="text-[#10b981] font-bold text-lg mb-6">✅ Success! Ready to Download</h3>
-                <div class="flex justify-center bg-black/50 p-4 rounded-xl border border-white/5 mb-6">
-                    <canvas id="mainCanvas" class="max-w-full h-auto rounded-lg border-2 border-white/10"></canvas>
+                <h3 class="text-[#10b981] font-syne font-bold text-xl mb-6">✅ Success! Ready to Download</h3>
+                <div class="flex justify-center bg-black/40 p-5 rounded-2xl border border-white/5 mb-6 inline-block">
+                    <canvas id="mainCanvas" class="max-w-full h-auto rounded-lg border-2 border-white/10 shadow-lg"></canvas>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <button id="dlBtn" class="flex-[2] bg-[#10b981] hover:bg-[#059669] text-white text-sm font-bold px-6 py-4 rounded-xl transition-all active:scale-95 uppercase">
+                    <button id="dlBtn" class="flex-[2] bg-[#10b981] hover:bg-[#059669] text-white text-sm font-bold px-6 py-4 rounded-xl transition-all active:scale-95 shadow-[0_0_15px_rgba(16,185,129,0.3)] uppercase">
                         ⬇️ Download JPG
                     </button>
                     <button id="waBtn" class="flex-1 bg-[#25D366] hover:bg-[#1da851] text-white text-sm font-bold px-6 py-4 rounded-xl transition-all active:scale-95 uppercase">
@@ -162,55 +230,86 @@
                     </button>
                 </div>
             </div>
+
         </div>
     </main>
 
-    <article class="w-full max-w-3xl mx-auto px-5 pb-20">
-        <div class="bg-white/[0.02] border border-white/10 rounded-3xl p-8 md:p-10">
-            <h2 class="text-2xl font-bold text-white mb-4">Add Only Date in Passport Size Photo</h2>
-            <p class="text-white/70 text-sm md:text-base leading-relaxed mb-4">
-                Are you applying for SSC CGL, CHSL, MTS, or UPSC exams and wondering <strong>how to add date on passport size photo</strong>? You are at the right place. Most government portals strictly reject forms if the photo does not follow the correct format.
-            </p>
-            <p class="text-white/70 text-sm md:text-base leading-relaxed mb-8">
-                Using our tool, you can easily <strong>add only date in passport size photo</strong> without needing complex software like Photoshop. If you don't want to print your name, simply leave the "Candidate Name" field blank, and the tool will perfectly center the Date of Photo (DOP) at the bottom.
-            </p>
+    <!-- ========================================== -->
+    <!-- 📖 SEMANTIC SEO ARTICLE (Google Ranking)   -->
+    <!-- ========================================== -->
+    <article class="w-full max-w-3xl px-5 pb-24 hero-reveal delay-3">
+        <!-- Exactly your text, but styled for readability and trust -->
+        <div class="prose prose-invert max-w-none">
+            
+            <section class="mb-12">
+                <h2 class="font-syne text-2xl sm:text-3xl font-bold text-white mb-5 border-b border-white/10 pb-4">Add Only Date in Passport Size Photo</h2>
+                <p class="text-white/70 text-[15px] leading-relaxed mb-4">
+                    Are you applying for SSC CGL, CHSL, MTS, or UPSC exams and wondering <strong>how to add date on passport size photo</strong>? You are at the right place. Most government portals strictly reject forms if the photo does not follow the correct format.
+                </p>
+                <p class="text-white/70 text-[15px] leading-relaxed">
+                    Using our tool, you can easily <strong>add only date in passport size photo</strong> without needing complex software like Photoshop. If you don't want to print your name, simply leave the "Candidate Name" field blank, and the tool will perfectly center the Date of Photo (DOP) at the bottom.
+                </p>
+            </section>
 
-            <h2 class="text-2xl font-bold text-white mb-4">Step-by-Step Guide</h2>
-            <ul class="text-white/70 text-sm md:text-base space-y-3 mb-10 list-disc pl-5">
-                <li><strong>Step 1:</strong> Upload your original scanned photograph.</li>
-                <li><strong>Step 2:</strong> To <strong>add date in passport size photo</strong>, select the exact date when the photo was taken from the calendar.</li>
-                <li><strong>Step 3:</strong> Use the quality slider to adjust the file size. Ensure the live counter shows a size between <strong>20KB to 50KB</strong>.</li>
-                <li><strong>Step 4:</strong> Click generate and download your application-ready JPG file.</li>
-            </ul>
+            <section class="mb-12">
+                <h2 class="font-syne text-2xl sm:text-3xl font-bold text-white mb-5 border-b border-white/10 pb-4">Step-by-Step Guide</h2>
+                <ul class="space-y-4 text-white/70 text-[15px]">
+                    <li class="flex items-start gap-3">
+                        <span class="bg-primary/20 text-primary font-bold px-2 py-0.5 rounded text-sm">Step 1</span> 
+                        Upload your original scanned photograph.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-primary/20 text-primary font-bold px-2 py-0.5 rounded text-sm">Step 2</span> 
+                        To <strong>add date in passport size photo</strong>, select the exact date when the photo was taken from the calendar.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-primary/20 text-primary font-bold px-2 py-0.5 rounded text-sm">Step 3</span> 
+                        Use the quality slider to adjust the file size. Ensure the live counter shows a size between <strong>20KB to 50KB</strong>.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="bg-primary/20 text-primary font-bold px-2 py-0.5 rounded text-sm">Step 4</span> 
+                        Click generate and download your application-ready JPG file.
+                    </li>
+                </ul>
+            </section>
 
-            <h2 class="text-2xl font-bold text-white mb-6">Frequently Asked Questions (FAQs)</h2>
-            <div class="space-y-4">
-                <div class="bg-black/40 border border-white/5 rounded-xl p-5">
-                    <h3 class="text-white font-semibold mb-2">Is it mandatory to put a date in passport size photo?</h3>
-                    <p class="text-white/60 text-sm">Yes, for exams conducted by SSC and UPSC, it is clearly stated in their official notification that the Date of Photograph (DOP) must be clearly printed at the bottom of the image.</p>
+            <section>
+                <h2 class="font-syne text-2xl sm:text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">Frequently Asked Questions (FAQs)</h2>
+                
+                <div class="space-y-4">
+                    <div class="bg-white/[0.02] border border-white/5 rounded-2xl p-6 transition-all hover:bg-white/[0.04]">
+                        <h3 class="text-lg font-bold text-white mb-2">Is it mandatory to put a date in passport size photo?</h3>
+                        <p class="text-white/60 text-sm leading-relaxed m-0">Yes, for exams conducted by SSC and UPSC, it is clearly stated in their official notification that the Date of Photograph (DOP) must be clearly printed at the bottom of the image.</p>
+                    </div>
+                    
+                    <div class="bg-white/[0.02] border border-white/5 rounded-2xl p-6 transition-all hover:bg-white/[0.04]">
+                        <h3 class="text-lg font-bold text-white mb-2">How do I reduce the photo size to 50KB?</h3>
+                        <p class="text-white/60 text-sm leading-relaxed m-0">After uploading your photo and adding the date, simply move the "Compress File Size" slider to the left. Watch the live KB counter until it drops below 50KB, then click download.</p>
+                    </div>
+
+                    <div class="bg-white/[0.02] border border-white/5 rounded-2xl p-6 transition-all hover:bg-white/[0.04]">
+                        <h3 class="text-lg font-bold text-white mb-2">Is this tool safe and private?</h3>
+                        <p class="text-white/60 text-sm leading-relaxed m-0">Absolutely. Our tool processes everything locally on your device's browser using HTML5 Canvas. Your photo is never uploaded, saved, or sent to any external server.</p>
+                    </div>
                 </div>
-                <div class="bg-black/40 border border-white/5 rounded-xl p-5">
-                    <h3 class="text-white font-semibold mb-2">How do I reduce the photo size to 50KB?</h3>
-                    <p class="text-white/60 text-sm">After uploading your photo and adding the date, simply move the "Compress File Size" slider to the left. Watch the live KB counter until it drops below 50KB, then click download.</p>
-                </div>
-                <div class="bg-black/40 border border-white/5 rounded-xl p-5">
-                    <h3 class="text-white font-semibold mb-2">Is this tool safe and private?</h3>
-                    <p class="text-white/60 text-sm">Absolutely. Our tool processes everything locally on your device's browser using HTML5 Canvas. Your photo is never uploaded, saved, or sent to any external server.</p>
-                </div>
-            </div>
+            </section>
+
         </div>
     </article>
 
+    <!-- ========================================== -->
+    <!-- ⚙️ CORE JAVASCRIPT TOOL LOGIC              -->
+    <!-- ========================================== -->
     <script>
         const el = (id) => document.getElementById(id);
         const canvas = el('mainCanvas'), ctx = canvas.getContext('2d');
         let loadedImg = null;
 
-        // Default Date Setup
+        // Init Default Date
         const today = new Date();
         el('dateIn').value = today.toISOString().split('T')[0];
 
-        // Upload Handlers
+        // Handle File Upload
         el('dropZone').onclick = () => el('fileIn').click();
         
         el('fileIn').onchange = (e) => {
@@ -224,9 +323,9 @@
                     el('pThumb').src = ev.target.result;
                     el('pFileName').innerText = file.name;
                     
-                    // UI Transitions
+                    // UI Switch
                     el('dropZone').style.display = 'none';
-                    el('pRow').style.display = 'flex';
+                    el('editor').style.display = 'block';
                     el('result').style.display = 'none';
                     
                     updateKB();
@@ -236,7 +335,7 @@
             r.readAsDataURL(file);
         };
 
-        // KB Calculation and Slider
+        // KB calculation and Slider Coloring
         const updateKB = () => {
             if(!loadedImg) return;
             draw();
@@ -245,37 +344,43 @@
                 const kbElement = el('kbOut');
                 kbElement.innerText = kb + " KB";
                 
-                // Color Code Size
+                // Visual feedback for correct size
                 if(kb >= 20 && kb <= 50) {
-                    kbElement.className = "text-lg font-bold text-[#10b981]"; // Green
+                    kbElement.className = "text-xl font-bold text-[#10b981] tracking-tight"; // Green
                 } else {
-                    kbElement.className = "text-lg font-bold text-white"; // White
+                    kbElement.className = "text-xl font-bold text-white tracking-tight"; // White
                 }
             }, 'image/jpeg', el('qSlider').value / 100);
         };
 
+        // Live updating listeners
         el('qSlider').oninput = updateKB;
         el('nameIn').oninput = updateKB;
         el('dateIn').oninput = updateKB;
 
-        // Core Drawing Logic from Original Code
+        // Canvas Rendering Logic
         function draw() {
             if(!loadedImg) return;
+            // Standard dimensions for passport
             const w = 275, h = 354; 
-            const s = Math.round(h * 0.24);
+            const s = Math.round(h * 0.24); // Bottom strip height
             canvas.width = w; canvas.height = h + s;
 
+            // Fill white background & draw image
             ctx.fillStyle = "#FFF"; ctx.fillRect(0,0, w, canvas.height);
             ctx.drawImage(loadedImg, 0,0, w, h);
 
+            // Fetch Text
             const n = el('nameIn').value.trim().toUpperCase();
             const dRaw = el('dateIn').value.split('-');
             const d = dRaw.length === 3 ? `DOP: ${dRaw[2]}-${dRaw[1]}-${dRaw[0]}` : "";
 
+            // Format Text
             ctx.fillStyle = "#000"; ctx.textAlign = "center";
             const fSize = Math.round(s * (n ? 0.32 : 0.45));
             ctx.font = `bold ${fSize}px 'Plus Jakarta Sans', sans-serif`;
 
+            // Draw Text
             if(n) {
                 ctx.fillText(n, w/2, h + s*0.42);
                 ctx.fillText(d, w/2, h + s*0.82);
@@ -284,24 +389,25 @@
             }
         }
 
-        // Action Buttons
+        // Action Handlers
         el('genBtn').onclick = () => {
-            if(!loadedImg) { alert("Please upload a photo first!"); return; }
+            if(!loadedImg) return;
             updateKB();
             el('result').style.display = "block";
             el('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         };
 
         el('dlBtn').onclick = () => {
-            const l = document.createElement('a');
-            l.download = "PhotoReady_Passport.jpg";
-            l.href = canvas.toDataURL('image/jpeg', el('qSlider').value / 100);
-            l.click();
+            if(!canvas) return;
+            const link = document.createElement('a');
+            link.download = "PhotoReady_Passport.jpg";
+            link.href = canvas.toDataURL('image/jpeg', el('qSlider').value / 100);
+            link.click();
         };
 
         el('waBtn').onclick = () => {
-            const t = encodeURIComponent("Bhai, photo par 'ONLY Date' lagane ka sabse best free tool yahan hai: https://photoready.in/");
-            window.open(`https://api.whatsapp.com/send?text=${t}`);
+            const text = encodeURIComponent("Bhai, photo par 'ONLY Date' lagane ka sabse best free tool yahan hai: https://photoready.in/");
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
         };
     </script>
 </body>
