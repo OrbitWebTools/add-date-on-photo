@@ -7,17 +7,17 @@
     <!-- 🚀 ULTIMATE SEO & META TAGS -->
     <title>Photo Compressor to 50KB & Add Date on Photo Online (2026 Govt Exams)</title>
     <meta name="description" content="Ultimate free tool for government exam form fill up. Compress image to 20kb, 50kb, 100kb, or 1mb. Add date on photo online for SSC, UPSC. 100% Private & Free.">
-    <meta name="keywords" content="photo compressor to 50kb, add date on photo online, government exam form fill up 2026, compress image to 50kb online, signature compressor to 50kb, photo compress under 20 kb, 1 mb size image download, compress image to 1mb jpg, add date on photo for ssc, reduce photo under 20kb, photo convert into 20 kb to 50 kb jpg">
+    <!-- Meta Keywords Removed: Google considers them spam -->
     <meta name="author" content="PhotoReady Labs">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-   <link rel="canonical" href="https://orbitwebtools.github.io/PhotoReady/">
+    <link rel="canonical" href="https://orbitwebtools.github.io/PhotoReady/">
 
     <!-- Social Media / Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orbitwebtools.github.io/PhotoReady/">
-    <meta property="og:title" content="Elite Photo Compressor & Date Adder for Government Exams">
+    <meta property="og:title" content="Photo Compressor to 50KB & Add Date on Photo Online (2026 Govt Exams)">
     <meta property="og:description" content="Resize, compress under 20KB-50KB, and insert Date of Photo (DOP) instantly without losing quality. Required for all 2026 Govt forms.">
     <meta property="og:image" content="https://orbitwebtools.github.io/PhotoReady/banner.jpg">
 
@@ -31,32 +31,12 @@
       "description": "An elite client-side web application for students to compress images to 20KB, 50KB, 100KB, resize dimensions, and add dates for government exam form fill ups.",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
-      "featureList": ["Compress image to 50kb online", "Compress image to 1mb jpg free", "Add date on photo for UPSC", "Signature compressor to 50kb", "Photo compress under 20 kb"]
-    }
-    </script>
-
-    <!-- JSON-LD FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How to make photo less than 20kb for signature?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Upload your signature, select the preset, and adjust the quality slider until the live counter shows under 20KB. It strictly operates as a photo compressor under 20kb without losing pixel clarity." }
-        },
-        {
-          "@type": "Question",
-          "name": "Which government exam form fill up is going on in 2026?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Multiple state and central exams like SSC CGL, UPSC Civil Services, and Railway RRB are active. Our tool updates its presets to match the current government exam form fill up guidelines." }
-        }
-      ]
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
     }
     </script>
 
     <!-- 💎 PREMIUM FONTS & TAILWIND CSS -->
+    <!-- NOTE: For Production, replace this CDN with a compiled Tailwind CSS file for 100/100 speed score -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
@@ -85,16 +65,12 @@
         input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); cursor: pointer; transition: 0.2s; border: 2px solid #fff; }
         input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); box-shadow: 0 0 20px rgba(139, 92, 246, 0.8); }
         
-        /* Smooth Entrance Animations */
         .fade-in { animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; transform: translateY(20px); }
         .delay-1 { animation-delay: 0.15s; } 
         .delay-2 { animation-delay: 0.3s; }
         @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
 
-        /* Canvas Output Glow */
         .canvas-glow { box-shadow: 0 0 30px rgba(16, 185, 129, 0.15); }
-
-        /* Accordion Animation */
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
@@ -104,10 +80,8 @@
     <!-- 🌐 NAVIGATION -->
     <nav class="w-full max-w-7xl px-6 py-6 flex justify-between items-center z-50">
         <a href="/" class="flex items-center gap-2 group">
-            <!-- CUSTOM LOGO (Upload 'logo.png' in root directory) -->
             <img src="logo.png" alt="PhotoReady Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
             
-            <!-- FALLBACK TEXT LOGO -->
             <div id="fallback-logo" class="hidden items-center gap-2">
                 <span class="text-3xl group-hover:scale-110 transition-transform duration-300">📸</span>
                 <span class="font-display text-2xl font-bold tracking-tight text-white">Photo<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Ready</span></span>
@@ -115,21 +89,21 @@
         </a>
         <div class="hidden md:flex gap-8 text-sm font-semibold text-white/60">
             <a href="#tool" class="hover:text-white transition-colors">Compressor Engine</a>
-            <!-- Link to the upcoming documentation file -->
-            <a href="documentation.html" class="text-purple-400 hover:text-purple-300 transition-colors">Full Documentation</a>
+            <a href="#guide" class="hover:text-white transition-colors">How to Use</a>
         </div>
     </nav>
 
-    <!-- 🚀 HERO SECTION -->
+    <!-- 🚀 HERO SECTION (H1 MATCHES TITLE) -->
     <header class="w-full max-w-5xl px-5 mt-4 mb-12 text-center z-10 fade-in delay-1">
         <div class="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-            Government Exam Form Fill Up Date 2026 Setup
+            Government Exam Form Fill Up 2026
         </div>
-        <h1 class="font-display text-4xl sm:text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/40 leading-tight mb-6">
-            Compress, Resize & Add Date <br class="hidden md:block"> Without Quality Loss.
+        <!-- FIXED H1 for SEO -->
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/40 leading-tight mb-6">
+            Free Photo Compressor to 50KB <br class="hidden md:block"> & Add Date Online
         </h1>
         <p class="text-white/60 text-sm md:text-lg font-medium max-w-3xl mx-auto leading-relaxed">
-            The ultimate utility for Indian students. Compress image to 50kb online, photo convert into 20 kb to 50 kb jpg, or perform a heavy 1 mb size image converter pdf alternative.
+            The ultimate utility for Indian students. Compress image to 20kb, 50kb online, or 100kb. Easily add Date of Photo (DOP) for SSC, UPSC, and Banking exams without losing quality. 100% Private and runs in your browser.
         </p>
     </header>
 
@@ -153,7 +127,7 @@
                 <!-- File Context & Presets -->
                 <div class="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center bg-black/30 rounded-xl p-4 border border-white/5">
                     <div class="flex items-center gap-4">
-                        <img id="pThumb" class="w-12 h-14 object-cover rounded-lg border border-white/20 shadow-md">
+                        <img id="pThumb" class="w-12 h-14 object-cover rounded-lg border border-white/20 shadow-md" alt="Uploaded photo thumbnail">
                         <div>
                             <span id="pFileName" class="block text-white font-medium text-sm truncate max-w-[150px] sm:max-w-[200px]"></span>
                             <button onclick="document.getElementById('fileIn').click()" class="text-[10px] text-purple-400 hover:text-white uppercase font-bold tracking-widest mt-1 transition-colors">Change File</button>
@@ -229,7 +203,6 @@
                     <button id="dlBtn" class="flex-[2] bg-white text-black hover:bg-gray-200 text-sm font-bold px-6 py-5 rounded-xl transition-all hover:scale-[1.02] active:scale-95 uppercase tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                         ⬇️ Download Secure File
                     </button>
-                    <!-- 🚨 EXPLICIT WHATSAPP BUTTON (With proper color and hover glow) -->
                     <button id="waBtn" class="flex-1 bg-whatsapp hover:bg-green-500 text-white text-sm font-bold px-6 py-5 rounded-xl transition-all hover:scale-[1.02] active:scale-95 uppercase tracking-widest flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(37,211,102,0.4)]">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                         Share
@@ -240,42 +213,104 @@
     </main>
 
     <!-- ========================================== -->
-    <!-- 📚 HIDDEN SEO ACCORDIONS (Maintains Clean UI) -->
+    <!-- 📚 NEW SEO CONTENT SECTION (Fixes Thin Content) -->
+    <!-- ========================================== -->
+    <article id="guide" class="w-full max-w-4xl px-5 mb-16 z-10 fade-in delay-2">
+        <div class="glass-panel rounded-3xl p-8 sm:p-12 text-white/80 space-y-8">
+            <h2 class="font-display text-2xl md:text-3xl font-bold text-white border-b border-white/10 pb-4">How to Compress Photo and Add Date Online for Govt Exams?</h2>
+            <p class="text-sm md:text-base leading-relaxed">
+                Filling out online forms for government exams like SSC CGL, UPSC, Railway (RRB), and State PSCs requires strict adherence to photo guidelines. If your passport size photo is over 50KB or missing the Date of Photo (DOP), your application might get rejected. Here is a step-by-step guide to using our free photo compressor:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-black/40 p-6 rounded-2xl border border-white/5">
+                    <h3 class="text-lg font-bold text-purple-400 mb-3">Step 1: Upload Your Image</h3>
+                    <p class="text-sm leading-relaxed">Click on the upload section above and select your raw photograph or signature. Our tool automatically converts HEIC or PNG files into the widely accepted JPG/JPEG format.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-2xl border border-white/5">
+                    <h3 class="text-lg font-bold text-blue-400 mb-3">Step 2: Add Name & Date</h3>
+                    <p class="text-sm leading-relaxed">Type your full name and select the current date from the calendar. The tool will automatically generate a perfectly aligned white strip at the bottom of your photo as per SSC/UPSC notifications.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-2xl border border-white/5">
+                    <h3 class="text-lg font-bold text-emerald-400 mb-3">Step 3: Adjust Size to 20KB or 50KB</h3>
+                    <p class="text-sm leading-relaxed">Use our smart quality slider. Watch the "Live Output Size" counter. For signatures, keep it under 20KB. For standard passport photos, keep it under 50KB.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-2xl border border-white/5">
+                    <h3 class="text-lg font-bold text-orange-400 mb-3">Step 4: Download Securely</h3>
+                    <p class="text-sm leading-relaxed">Click "Compile Photograph" and download your file. All processing is done strictly within your browser (client-side), meaning your private documents are never uploaded to any external server.</p>
+                </div>
+            </div>
+
+            <h2 class="font-display text-2xl md:text-3xl font-bold text-white border-b border-white/10 pb-4 mt-12">Official Photo & Signature Guidelines (2026)</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-white/20 text-white">
+                            <th class="py-4 px-4 font-bold">Document Type</th>
+                            <th class="py-4 px-4 font-bold">File Size Required</th>
+                            <th class="py-4 px-4 font-bold">Format</th>
+                            <th class="py-4 px-4 font-bold">Dimensions (W x H)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="py-4 px-4">SSC / UPSC Photograph</td>
+                            <td class="py-4 px-4 font-semibold text-emerald-400">20 KB to 50 KB</td>
+                            <td class="py-4 px-4">JPEG / JPG</td>
+                            <td class="py-4 px-4">3.5 cm x 4.5 cm (approx 275x354 px)</td>
+                        </tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="py-4 px-4">Signature Upload</td>
+                            <td class="py-4 px-4 font-semibold text-blue-400">10 KB to 20 KB</td>
+                            <td class="py-4 px-4">JPEG / JPG</td>
+                            <td class="py-4 px-4">4.0 cm x 2.0 cm (approx 400x150 px)</td>
+                        </tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="py-4 px-4">Banking (IBPS/SBI) Photo</td>
+                            <td class="py-4 px-4 font-semibold text-emerald-400">20 KB to 50 KB</td>
+                            <td class="py-4 px-4">JPEG / JPG</td>
+                            <td class="py-4 px-4">4.5 cm x 3.5 cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+
+    <!-- ========================================== -->
+    <!-- 📚 HIDDEN SEO ACCORDIONS -->
     <!-- ========================================== -->
     <article class="w-full max-w-4xl px-5 pb-24 z-10 fade-in delay-2">
-        <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mb-8 text-center">Frequently Asked Questions & Scenarios</h2>
+        <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mb-8 text-center">Frequently Asked Questions</h2>
         
         <div class="space-y-4">
-            <!-- Accordion 1 -->
             <div class="glass-panel rounded-xl overflow-hidden">
                 <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
                     How to make photo less than 20kb for signature upload?
                     <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
                 </button>
                 <div class="accordion-content bg-black/30 px-6">
-                    <p class="text-white/60 text-sm py-5 leading-relaxed">To effectively <strong>reduce photo under 20kb</strong> without rendering it unreadable, you must not only lower the quality but also the dimensions. Select our "Signature" preset, which automatically resizes the canvas to 400x150 pixels. Then, move the slider to the left until the live counter dictates the file acts as a <strong>photo compressor to 10kb</strong> or up to 20kb. This is explicitly required for UPSC and Banking portals.</p>
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">To effectively <strong>reduce photo under 20kb</strong> without rendering it unreadable, you must not only lower the quality but also the dimensions. Select our "Signature" preset, which automatically resizes the canvas to 400x150 pixels. Then, move the slider to the left until the live counter shows under 20KB. This is explicitly required for UPSC and Banking portals.</p>
                 </div>
             </div>
 
-            <!-- Accordion 2 -->
             <div class="glass-panel rounded-xl overflow-hidden">
                 <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
                     Is this tool safe for sensitive government document uploads?
                     <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
                 </button>
                 <div class="accordion-content bg-black/30 px-6">
-                    <p class="text-white/60 text-sm py-5 leading-relaxed">Absolutely. Privacy is our core foundation. When you <strong>compress image to 1mb jpg free</strong> or execute a <strong>signature compressor to 50kb</strong>, the processing happens entirely within your web browser. There are zero background server uploads. Your personal data remains on your physical device throughout the entire <strong>government exam form fill up 2026</strong> cycle.</p>
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">Absolutely. Privacy is our core foundation. When you <strong>compress image to 50kb</strong> or resize your signature, the processing happens entirely within your web browser using HTML5 Canvas API. There are zero background server uploads. Your personal data remains on your physical device at all times.</p>
                 </div>
             </div>
 
-            <!-- Accordion 3 -->
             <div class="glass-panel rounded-xl overflow-hidden">
                 <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
-                    How do I add a Date of Photo (DOP) correctly?
+                    How do I add Date on Photo for SSC exams correctly?
                     <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
                 </button>
                 <div class="accordion-content bg-black/30 px-6">
-                    <p class="text-white/60 text-sm py-5 leading-relaxed">Many students struggle and try to edit manually, which often misaligns the text or ruins the aspect ratio. Our tool automates this perfectly. Simply upload your image, fill in the "Candidate Name" and "Date of Photo" fields, and our engine automatically calculates and generates a perfectly aligned white strip at the bottom. This ensures your file strictly complies when you need to <strong>add date on photo for ssc</strong> or UPSC.</p>
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">Many students struggle and try to edit manually, which often misaligns the text or ruins the aspect ratio. Our tool automates this perfectly. Simply upload your image, fill in the "Candidate Name" and "Date of Photo" fields. Our system generates a perfectly aligned white strip at the bottom, ensuring your file strictly complies with SSC guidelines.</p>
                 </div>
             </div>
         </div>
@@ -289,12 +324,10 @@
     <!-- ⚙️ ADVANCED JAVASCRIPT ENGINE              -->
     <!-- ========================================== -->
     <script>
-        // Smooth Accordion Logic
         function toggleAccordion(btn) {
             const content = btn.nextElementSibling;
             const icon = btn.querySelector('span');
             
-            // Close all other accordions
             document.querySelectorAll('.accordion-content').forEach(el => {
                 if(el !== content) {
                     el.style.maxHeight = null;
@@ -377,7 +410,6 @@
                 const kbOut = el('kbOut');
                 kbOut.innerText = kb + " KB";
 
-                // Color coding based on targets
                 if (kb >= 20 && kb <= 50) {
                     kbOut.className = "text-3xl font-display font-bold text-emerald-400 tracking-tighter drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] transition-colors";
                 } else if (kb < 20) {
@@ -408,7 +440,6 @@
             canvas.width = w; 
             canvas.height = h + s;
 
-            // Strict logic: Fill white background to prevent black backgrounds on transparent PNGs converting to JPG
             if(isJPG) {
                 ctx.fillStyle = "#FFFFFF"; 
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -455,9 +486,9 @@
         };
 
         el('waBtn').onclick = () => {
-            // Updated Official Link in WhatsApp sharing
+            // FIXED: JavaScript syntax error in window.open string interpolation
             const text = encodeURIComponent("Sarkari exam form ke liye photo 50KB karna ho ya Date lagani ho, ye free tool sabse best hai. 100% Secure. Link: https://orbitwebtools.github.io/PhotoReady/");
-            window.open(https://orbitwebtools.github.io/PhotoReady/send?text=${text}`, '_blank');
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
         };
     </script>
 </body>
